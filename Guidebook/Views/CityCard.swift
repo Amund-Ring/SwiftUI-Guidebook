@@ -23,7 +23,8 @@ struct CityCard: View {
             
             Rectangle()
                 .foregroundColor(.black)
-                .opacity(0.5)
+//                .opacity(0.5)
+                .opacity(0.3)
             
             VStack(alignment: .leading) {
                 Text(city.name)

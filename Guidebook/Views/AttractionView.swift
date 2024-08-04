@@ -12,20 +12,23 @@ struct AttractionView: View {
     var city: City
     
     var body: some View {
-//        NavigationStack {
-            ScrollView {
-                VStack {
+        ScrollView(showsIndicators: false) {
+                VStack (){
                     ForEach(city.attractions) { attraction in
                         NavigationLink {
                             DetailView(attraction: attraction)
                         } label: {
-                            Text(attraction.name)
+                            AttractionRow(attraction: attraction)
+                                .padding(.bottom, 50)
                         }
+                        .buttonStyle(.plain)
 
                     }
                 }
             }
-//        }
+            .padding(.horizontal)
+            .padding(.top, 10)
+            .background(.black)
     }
 }
 

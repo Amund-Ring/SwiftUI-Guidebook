@@ -21,13 +21,16 @@ struct CityView: View {
                             AttractionView(city: city)
                         } label: {
                             CityCard(city: city)
-//                                .padding(.bottom, 100)
+                                .padding(.bottom, 20)
                         }
+                        .buttonStyle(.plain)
                     }
                 }
             }
-            .padding()
+            .padding(.horizontal)
+            .background(.black)
         }
+        .ignoresSafeArea()
         .onAppear {
             cities = dataService.getData()
         }

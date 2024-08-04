@@ -12,18 +12,44 @@ struct DetailView: View {
     var attraction: Attraction
     
     var body: some View {
-        ScrollView {
-            VStack {
-                Text(attraction.name)
-                
-                Image(attraction.imageName)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                
-                Text(attraction.longDescription)
+        VStack(spacing: 20) {
+            Image(attraction.imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(height: 300)
+            
+                .clipShape(SlantedShape())
+            
+            
+            ScrollView(showsIndicators: false) {
+                VStack(alignment: .leading, spacing: 20) {
+                    Text(attraction.name)
+                        .font(.title)
+                        .bold()
+                    
+                    Text(attraction.longDescription)
+                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                }
+                .padding(.bottom, 50)
             }
-            .padding()
+            .padding(.horizontal)
+            
         }
+        .foregroundColor(.white)
+        .ignoresSafeArea()
+        .background(.black)
+    }
+}
+
+struct SlantedShape: Shape {
+    func path(in rect: CGRect) -> Path {
+        var path = Path()
+        path.move(to: CGPoint(x: 0, y: 0))
+        path.addLine(to: CGPoint(x: rect.width, y: 0))
+        path.addLine(to: CGPoint(x: rect.width, y: rect.height)) // Adjust the slant height here
+        path.addLine(to: CGPoint(x: 0, y: rect.height - 50))
+        path.closeSubpath()
+        return path
     }
 }
 

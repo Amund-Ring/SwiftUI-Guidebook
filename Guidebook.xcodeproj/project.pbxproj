@@ -17,6 +17,7 @@
 		293077712C5CE3BE000AAA95 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293077702C5CE3BE000AAA95 /* City.swift */; };
 		293077762C5CE508000AAA95 /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293077752C5CE508000AAA95 /* Attraction.swift */; };
 		293077792C5FA636000AAA95 /* CityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293077782C5FA636000AAA95 /* CityCard.swift */; };
+		29D60C2A2C5FB32900642C04 /* AttractionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D60C292C5FB32900642C04 /* AttractionRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		293077702C5CE3BE000AAA95 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		293077752C5CE508000AAA95 /* Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
 		293077782C5FA636000AAA95 /* CityCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCard.swift; sourceTree = "<group>"; };
+		29D60C292C5FB32900642C04 /* AttractionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				2930775E2C5CE244000AAA95 /* CityView.swift */,
 				293077782C5FA636000AAA95 /* CityCard.swift */,
 				2930776A2C5CE2B1000AAA95 /* AttractionView.swift */,
+				29D60C292C5FB32900642C04 /* AttractionRow.swift */,
 				2930776C2C5CE2C1000AAA95 /* DetailView.swift */,
 			);
 			path = Views;
@@ -181,6 +184,7 @@
 			files = (
 				2930775F2C5CE244000AAA95 /* CityView.swift in Sources */,
 				2930776D2C5CE2C1000AAA95 /* DetailView.swift in Sources */,
+				29D60C2A2C5FB32900642C04 /* AttractionRow.swift in Sources */,
 				293077712C5CE3BE000AAA95 /* City.swift in Sources */,
 				293077762C5CE508000AAA95 /* Attraction.swift in Sources */,
 				293077792C5FA636000AAA95 /* CityCard.swift in Sources */,
