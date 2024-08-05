@@ -20,7 +20,6 @@ struct AttractionRow: View {
                 .cornerRadius(15)
             
             Text(attraction.name)
-//                .font(.title2)
                 .font(.largeTitle)
                 .bold()
             

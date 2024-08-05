@@ -12,14 +12,14 @@ struct DetailView: View {
     var attraction: Attraction
     
     var body: some View {
-        VStack(spacing: 20) {
-            Image(attraction.imageName)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(height: 300)
-            
-                .clipShape(SlantedShape())
-            
+        ZStack() {
+            VStack {
+                Image(attraction.imageName)
+                    .resizable()
+                    .frame(height: 300)
+                
+                Spacer()
+            }
             
             ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 20) {
@@ -31,8 +31,12 @@ struct DetailView: View {
                         .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                 }
                 .padding(.bottom, 50)
+                .padding(.top, 50)
+                .padding(.horizontal, 20)
             }
-            .padding(.horizontal)
+            .background(Color.black)
+            .padding(.top, 250)
+            .clipShape(ScrollShape())
             
         }
         .foregroundColor(.white)
@@ -41,13 +45,13 @@ struct DetailView: View {
     }
 }
 
-struct SlantedShape: Shape {
+struct ScrollShape: Shape {
     func path(in rect: CGRect) -> Path {
         var path = Path()
-        path.move(to: CGPoint(x: 0, y: 0))
-        path.addLine(to: CGPoint(x: rect.width, y: 0))
-        path.addLine(to: CGPoint(x: rect.width, y: rect.height)) // Adjust the slant height here
-        path.addLine(to: CGPoint(x: 0, y: rect.height - 50))
+        path.move(to: CGPoint(x: 0, y: 250)) // Start slightly down from top-left
+        path.addLine(to: CGPoint(x: rect.width, y: 300)) // Draw line to top-right
+        path.addLine(to: CGPoint(x: rect.width, y: rect.height)) // Draw line to bottom-right
+        path.addLine(to: CGPoint(x: 0, y: rect.height)) // Draw line to bottom-left
         path.closeSubpath()
         return path
     }
