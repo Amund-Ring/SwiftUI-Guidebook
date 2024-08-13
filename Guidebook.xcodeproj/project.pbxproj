@@ -17,6 +17,7 @@
 		293077712C5CE3BE000AAA95 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293077702C5CE3BE000AAA95 /* City.swift */; };
 		293077762C5CE508000AAA95 /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293077752C5CE508000AAA95 /* Attraction.swift */; };
 		293077792C5FA636000AAA95 /* CityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293077782C5FA636000AAA95 /* CityCard.swift */; };
+		29953D802C6B88860084B217 /* DemoData.json in Resources */ = {isa = PBXBuildFile; fileRef = 29953D7F2C6B88860084B217 /* DemoData.json */; };
 		29D60C2A2C5FB32900642C04 /* AttractionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D60C292C5FB32900642C04 /* AttractionRow.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		293077702C5CE3BE000AAA95 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		293077752C5CE508000AAA95 /* Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
 		293077782C5FA636000AAA95 /* CityCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCard.swift; sourceTree = "<group>"; };
+		29953D7F2C6B88860084B217 /* DemoData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DemoData.json; sourceTree = "<group>"; };
 		29D60C292C5FB32900642C04 /* AttractionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,7 @@
 				2930777A2C5FA644000AAA95 /* Views */,
 				293077772C5CE847000AAA95 /* Models */,
 				29D60C282C5FA73000642C04 /* Services */,
+				29953D7E2C6B88440084B217 /* Data */,
 				293077602C5CE245000AAA95 /* Assets.xcassets */,
 				293077622C5CE245000AAA95 /* Preview Content */,
 			);
@@ -102,6 +105,14 @@
 				2930776C2C5CE2C1000AAA95 /* DetailView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		29953D7E2C6B88440084B217 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				29953D7F2C6B88860084B217 /* DemoData.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		29D60C282C5FA73000642C04 /* Services */ = {
@@ -171,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				293077642C5CE245000AAA95 /* Preview Assets.xcassets in Resources */,
+				29953D802C6B88860084B217 /* DemoData.json in Resources */,
 				293077612C5CE245000AAA95 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
