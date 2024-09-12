@@ -93,8 +93,6 @@ On the bottom floor is an exhibit room showing the history and science of animat
     
     func getFileData() -> [City] {
         
-        print("test")
-        
         // Get file path to DemoData.json
         if let url = Bundle.main.url(forResource: "DemoData", withExtension: "json") {
             
@@ -107,6 +105,7 @@ On the bottom floor is an exhibit room showing the history and science of animat
                 
                 do {
                     let cities = try decoder.decode([City].self, from: data)
+                    
                     return cities
                 } catch {
                     print("Could not parse JSON: \(error)")
