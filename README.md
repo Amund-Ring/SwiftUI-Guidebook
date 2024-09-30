@@ -1,3 +1,7 @@
+![Swift](https://img.shields.io/badge/Swift-FA7343?style=flat&logo=swift&logoColor=white)
+![SwiftUI](https://img.shields.io/badge/SwiftUI-000000?style=flat&logo=swift&logoColor=white)
+<br/>
+
 ## Guidebook - SwiftUI demonstration
 
 
